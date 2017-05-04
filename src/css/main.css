@@ -28,7 +28,7 @@ html, body {
 }
 
 .intro {
-	background: url('../images/fruit.jpg') no-repeat center;
+	background: url('../images/fruit.jpg'), maroon no-repeat center;
 	background-size: cover;
 	color: #fff;
 	width: 100%;
@@ -38,7 +38,6 @@ html, body {
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
-	/*opacity: 0.8;*/
 }
 
 .intro-title {
@@ -55,8 +54,8 @@ html, body {
 }
 
 .intro-btn {
-	width: 15%;
 	min-width: 100px;
+	max-width: 150px;
 	text-decoration: none;
 	background-color: #fff;
 	color: #262626;

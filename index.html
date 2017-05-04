@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Sunny Side</title>
-	<meta name="description" content="Simple JavaScript Quiz">
+	<title>Sunny Side Smoothie Delight</title>
+	<meta name="description" content="Sunny Side Foods introduces exciting new product - Smoothie Delight! Healthiest most delicious fruit drink on the market">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
@@ -17,11 +17,11 @@
 		<div class="logo">Sunny Side Foods</div>
 	</header>
 
-	<main id="content">
+	<main id="content" role="main">
 		<header class="intro">
 			<h1 class="intro-title">Smoothie Delight: Poland’s healthiest and most delicious fruit drink</h1>
 			<h2 class="intro-description">Every smoothie is an experience. Make it count with Smoothie Delight!</h2>
-			<a href="#scroll-to" class="intro-btn scroll">Learn more</a>
+			<a href="#scroll-to" role="button" class="intro-btn scroll">Learn more</a>
 		</header>
 
 		<article class="info" id="scroll-to">
@@ -42,21 +42,22 @@
 			</section>
 		</article>
 
-		<section class="img-section" alt="">
-			<img src="src/images/strawberry.jpg" alt="" class="smoothie-img">
-			<img src="src/images/mango.jpg" alt="" class="smoothie-img">
-			<img src="src/images/green.jpg" alt="" class="smoothie-img">
-			<img src="src/images/blueberry.jpg" alt="" class="smoothie-img">
+		<section class="img-section">
+			<img src="src/images/strawberry.jpg" alt="Strawberry Surprise Smoothie" class="smoothie-img">
+			<img src="src/images/mango.jpg" alt="Mango Mayhem Smoothie" class="smoothie-img">
+			<img src="src/images/green.jpg" alt="Amazing Kale Smoothie" class="smoothie-img">
+			<img src="src/images/blueberry.jpg" alt="Berry Bonanza Smoothie" class="smoothie-img">
 		</section>
 
 		<footer class="page-footer">
 			<section class="subscribe">
     		<div>
-      		<h3>Want to know more?</h3>
+      		<h3>Want to stay in touch</h3>
       		<p>Sign up for our mailing list to receive discounts, free smoothies, new flavor announcements and more!</p>
     		</div>
     		<form action="index.html" method="post" class="subscribe-form">
-      		<input type="email" name="email" class="subscribe-input" placeholder="Email address">
+    			<label for="email-address">Your Email: </label>
+      		<input type="email" name="email" class="subscribe-input" id="email-address" placeholder="i.e. janedoe@vp.com">
       		<button type="submit" class="subscribe-submit">Subscribe</button>
     		</form>
     		<p>Thank You</p>
