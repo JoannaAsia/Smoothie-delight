@@ -1,1 +1,7 @@
-// get headers offsetHeight and pass it as a margintop to #content
+
+$('.scroll').click(function() {
+        $('html, body').animate({
+            'scrollTop': $($.attr(this, 'href')).position().top-50
+        }, 500);
+        return false;
+    });

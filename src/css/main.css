@@ -42,7 +42,7 @@ html, body {
 }
 
 .intro-title {
-	font-size: 4rem;
+	font-size: 3rem;
 	margin: 0 15px;
 	word-break: break-word;
 	text-shadow: 2px 2px 2px #262626;
@@ -75,11 +75,10 @@ html, body {
 } 
 
 .info {
-	width: 400px;
+	width: 280px;
 	margin: 0 auto;
 	text-align: center;
 	line-height: 25px;
-	border: 1px solid black;
 }
 
 .info-header-title {
@@ -121,13 +120,15 @@ html, body {
 }
 
 .img-section {
-	
+ 	width: 100%;
+ 	text-align: center;
 }
 
 .smoothie-img {
 	width: 300px;
 	height: 400px;
-	display: inline-block;
+	padding: 0;
+	margin: 0;
 }
 
 .page-footer {
@@ -139,14 +140,33 @@ html, body {
 
 .subscribe {
 	margin: 0 15px;
+	text-align: center;
 }
 
+.subscribe-input:focus {
+	outline: none;
+	border: 1px solid #FAD942;
+  box-shadow: 0 0 10px #FAD942;
+}
+
+@media (min-width: 400px) {
+
+	.intro-title {
+		font-size: 3.5rem;
+		margin: 0 30px;
+	}
+
+	.intro-description {
+		font-size: 2rem;
+		margin: 0 30px;
+	}
+
+	.info {
+		width: 360px;
+	}
+}
 
 @media (min-width: 768px) {
-	.content-intro {
-		/*padding-top: 30px;*/
-
-	}
 
 	.intro-title {
 		font-size: 4.5rem;
@@ -162,3 +182,11 @@ html, body {
 		width: 600px;
 	}
 }
+
+@media (min-width: 1024px) {
+		.info {
+		width: 800px;
+	}
+}
+
+
