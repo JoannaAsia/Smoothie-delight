@@ -1,0 +1,25 @@
+{
+  "name": "smoothie-delight",
+  "version": "1.0.0",
+  "description": "One page application for food brand called sunny side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoannaAsia/Smoothie-delight.git"
+  },
+  "author": "joanna.wojcik91@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoannaAsia/Smoothie-delight/issues"
+  },
+  "homepage": "https://github.com/JoannaAsia/Smoothie-delight#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.4.0",
+    "lite-server": "^2.3.0"
+  }
+}
