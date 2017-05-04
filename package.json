@@ -1,7 +1,7 @@
 {
   "name": "smoothie-delight",
   "version": "1.0.0",
-  "description": "One page application for food brand called sunny side",
+  "description": "One page application for food brand called sunny side foods",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,9 @@
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
     "gulp-postcss": "^6.4.0",
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "postcss-nested": "^1.0.1"
   }
 }

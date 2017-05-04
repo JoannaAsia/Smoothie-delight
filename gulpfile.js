@@ -1,13 +1,18 @@
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
+var cleanCSS = require('gulp-clean-css');
 
 gulp.task('css', function() {
-	var plugins = [
-		autoprefixer({browsers: ['> 1%'], cascade: false})
-		// support all browsers with more than 1% of global usage
-	];
-	return gulp.src('src/*.css')
-	.pipe(postcss(plugins))
+	return gulp.src('src/css/*.css')
+	.pipe(postcss([
+		require('autoprefixer')({}),
+		require('postcss-nested')
+		]))
 	.pipe(gulp.dest('dist'));
+});
+
+gulp.task('minify-css', function() {
+  return gulp.src('src/css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/minified'));
 });
